@@ -9,7 +9,7 @@ function App() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://my-backend-app-test-b9ebcnapbxcagzdc.australiacentral-01.azurewebsites.net/login', { email, password });
+      const response = await axios.post('http://mytrafficmanagerpersonal.trafficmanager.net/login', { email, password });
       setMessage(response.data.message);
     } catch (error) {
       setMessage('Login failed!');
