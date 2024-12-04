@@ -9,7 +9,7 @@ function App() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/login', {
+      const response = await axios.post('my-backend-app-test-b9ebcnapbxcagzdc.australiacentral-01.azurewebsites.net/login', {
         email,
         password,
       });
